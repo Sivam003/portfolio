@@ -1,5 +1,5 @@
 import React from 'react'
-import Sidebar from './components/sidebar'
+import Sidebar from './components/Sidebar'
 import Hero from './components/Hero'
 import Skills from './components/Skills'
 import Experience from './components/Experience'
