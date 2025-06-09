@@ -10,7 +10,7 @@ import { DiMongodb } from "react-icons/di";
 
 const Skills = () => {
   return (
-    <div className="overflow-hidden py-10 bg-[#0a192f] ml-10 mr-10">
+    <div className="overflow-hidden bg-[#0a192f] xl:max-w-[90%] max-w-[85vw] mx-auto mt-20 px-4">
       <div className="whitespace-nowrap animate-scroll flex gap-16 text-4xl w-max">
         <FaHtml5 />
         <FaCss3 />

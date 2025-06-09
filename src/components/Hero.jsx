@@ -2,7 +2,8 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <section id="about" className="text-gray-400 max-w-3xl mx-auto px-6 py-20 text-justify">
+    <section id="about" className="text-gray-400 w-full mx-auto px-10 text-justify mt-20">
+      <h2 className="xl:hidden text-white font-mono text-2xl text-center mb-5">About Me</h2>
       <p className="mb-4 text-lg">
         I’m a final-year B.Tech Computer Science Engineering student with a strong interest in web development, software engineering, and machine learning. Over the past few years, I’ve dedicated myself to building real-world projects that bridge the gap between clean design and functional code.
       </p>

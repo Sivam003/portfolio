@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
-import { IoMdDownload } from "react-icons/io";
+import { GoLinkExternal } from "react-icons/go";
 
 const Sidebar = () => {
   const [activeSection, setActiveSection] = useState("about");
@@ -33,19 +33,19 @@ const Sidebar = () => {
   }, []);
 
   return (
-    <div className="p-20 ml-20 w-2/5">
-      <div className="flex flex-col items-start justify-center">
+    <div className="flex flex-col items-center xl:items-start py-20 px-10">
+      <div className="flex flex-col items-center xl:items-start justify-center">
         <h1 className="text-5xl mb-5 font-bold">
           SIVAM <span className="text-white">VISNU</span>
         </h1>
         <h2 className="text-2xl mb-4">Full Stack Developer | ML Enthusiast</h2>
-        <p className="text-lg mb-20">
+        <p className="text-lg mb-5 text-center xl:text-start">
           I craft accessible, pixel-perfect interfaces with clean code and
           thoughtful design
         </p>
       </div>
 
-      <div className="mb-20 text-xl">
+      <div className="mb-20 text-xl hidden xl:block">
         <ul className="space-y-4">
           {sections.map(({ id, label }) => (
             <li key={id} className="flex items-center group">
@@ -108,9 +108,9 @@ const Sidebar = () => {
           href="https://drive.google.com/file/d/1hLWz-g-1YSdf1ZnV-QlrrV5go0KSi8S2/view?usp=drive_link"
           target="_blank"
           rel="noreferrer"
-          className="flex items-center gap-2 text-lg border rounded-xl hover:bg-gray-700 px-3 hover:text-white transition"
+          className="flex items-center gap-2 text-lg border rounded-xl hover:bg-gray-700 px-3 hover:text-white transition hover:cursor-pointer"
         >
-          Resume <IoMdDownload />
+          Resume <GoLinkExternal />
         </a>
       </div>
 
